@@ -48,6 +48,7 @@ IoT system that adjust the room condition appropriate to the current state of mi
 7. Step Motor (ULN2003)
 8. Speaker
 9. 3-colors LED
+10. 3D Modeling & Printing
 
 
 
