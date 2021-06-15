@@ -32,7 +32,7 @@ def get_request(dir):
     else:
       return 'Yet'
 # record에 날짜, 메시지, 안밖 온도 저장
-def save_record(dir, request_message, color, temp_in, temp_out):
+def save_record(dir, request_message, color):
     from datetime import datetime
 
     record_ref = dir.child('record')
@@ -40,9 +40,7 @@ def save_record(dir, request_message, color, temp_in, temp_out):
     date = datetime.today().strftime('%Y%m%d%H%M')
 
     record = record_ref.push({'date' : date,
-                            'message' : request_message,
-                            'temperature_inside' : temp_in,
-                            'temperature_outside' : temp_out})
+                            'message' : request_message})
   
     decorate_ref = dir.child('Decorate')
 
@@ -119,7 +117,8 @@ if isWlqwnd:
     pwmBlue.ChangeDutyCycle(100)
     pwmRed.ChangeDutyCycle(0)
     pwmGreen.ChangeDutyCycle(0)
-
+    save_record(dir, request_message, 'blue')
+    
     if now.hour >= 6 or now.hour <= 18:
         if isBlind:
             os.system("python3 blind_close.py")
@@ -136,6 +135,7 @@ elif isTodrkr:
     pwmBlue.ChangeDutyCycle(0)
     pwmRed.ChangeDutyCycle(100)
     pwmGreen.ChangeDutyCycle(100)
+    save_record(dir, request_message, 'yellow')
 
     if now.hour >= 6 or now.hour <= 18:
         if isBlind:
@@ -153,7 +153,8 @@ elif isGbtlr:
     pwmBlue.ChangeDutyCycle(98)
     pwmRed.ChangeDutyCycle(38)
     pwmGreen.ChangeDutyCycle(86)
-
+    save_record(dir, request_message, 'green')
+    
     if now.hour >= 6 or now.hour <= 18:
         if isBlind:
             os.system("python3 blind_close.py")
@@ -170,7 +171,8 @@ elif isDnsehd:
     pwmBlue.ChangeDutyCycle(0)
     pwmRed.ChangeDutyCycle(100)
     pwmGreen.ChangeDutyCycle(0)
-
+    save_record(dir, request_message, 'red')
+    
     if now.hour >= 6 or now.hour <= 18:
         if isBlind:
             os.system("python3 blind_close.py")
@@ -187,6 +189,7 @@ elif isDkswjd:
     pwmBlue.ChangeDutyCycle(0)
     pwmRed.ChangeDutyCycle(0)
     pwmGreen.ChangeDutyCycle(100)
+    save_record(dir, request_message, 'green')
 
     if now.hour >= 6 or now.hour <= 18:
         if isBlind:
@@ -204,7 +207,8 @@ elif isDkarl:
     pwmBlue.ChangeDutyCycle(0)
     pwmRed.ChangeDutyCycle(100)
     pwmGreen.ChangeDutyCycle(100)
-
+    save_record(dir, request_message, 'yellow')
+    
     if now.hour >= 6 or now.hour <= 18:
         if isBlind:
             os.system("python3 blind_close.py")
@@ -222,7 +226,8 @@ elif isEkdldjxm:
     GPIO.output(red,False)
     GPIO.output(green, False)
     GPIO.output(blue, True)
-
+    save_record(dir, request_message, 'blue')
+    
     if now.hour >= 6 or now.hour <= 18:
         if isBlind:
             os.system("python3 blind_close.py")
@@ -236,9 +241,3 @@ elif isEkdldjxm:
 
 else:
     print("no no no no")
-
-
-
-
-
-
