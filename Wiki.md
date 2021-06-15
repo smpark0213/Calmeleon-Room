@@ -56,7 +56,7 @@ IoT system that adjust the room condition appropriate to the current state of mi
 | |박승민|조병욱|황수정|
 |---|------|-----|------|
 |Major|Software|Mechanical Engineering|Software|
-|E-mail|smpark0213@gachon.ac.kr|whquddnr97@gamil.com|sujung401@gachon.ac.kr|
+|E-mail|smpark0213@gachon.ac.kr|whquddnr97@gmail.com|sujung401@gachon.ac.kr|
 |Github ID|smpark0213|whquddnr97|hwangsujeong99|
 |Role|Sensor & Actuator & Wiki & Progress PPT|API & Transfer Data Server & Making Android app & Final PPT|Idea Planning & Gathering and processing Data & proposal PPT & Final PPT & Design Model|
 
