@@ -66,7 +66,7 @@ IoT system that adjust the room condition appropriate to the current state of mi
 
 ### Schedule
 2021년 5월 ~ 2021년 6월(약 45일)
-![image](https://user-images.githubusercontent.com/60349584/121995704-5a868380-cde2-11eb-9046-935e814f5d7f.png)
+![image](https://user-images.githubusercontent.com/60349584/121996895-683d0880-cde4-11eb-8b2a-b79b101c5aed.png)
 
 
 ### Reference
