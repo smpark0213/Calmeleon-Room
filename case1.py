@@ -14,6 +14,8 @@ dht22_out = adafruit_dht.DHT22(SENSOR_PIN_OUT, use_pulseio=False)
 def mp3():
     os.system("mpg321 white.mp3")
  
+def getValue():
+    os.system("python3 main.py")
 
 def temper():
     temp = True
@@ -42,9 +44,15 @@ def mp3_thread():
     thread=threading.Thread(target=mp3)
     thread.daemon=True
     thread.start()
+    
+def getValue_thread():
+    thread=threading.Thread(target=getValue)
+    thread.daemon=True
+    thread.start()
 
 
 if __name__ == "__main__":
+    getValue_thread()
     mp3_thread()
     temper()
 
