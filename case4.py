@@ -52,9 +52,6 @@ def getValue_thread():
     thread.start()    
 
 if __name__ == "__main__":
-    getValue_thread():
     mp3_thread()
+    getValue_thread()
     temper()
-
-
-
