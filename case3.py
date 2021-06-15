@@ -55,6 +55,3 @@ if __name__ == "__main__":
     getValue_thread()
     mp3_thread()
     temper()
-
-
-
