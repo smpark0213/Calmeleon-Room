@@ -63,7 +63,15 @@ IoT system that adjust the room condition appropriate to the current state of mi
 ### Implemeatation Progress
 ![image](https://user-images.githubusercontent.com/60349584/121996066-f1ebd680-cde2-11eb-8cd2-7f0d2d019421.png)
 ![image](https://user-images.githubusercontent.com/60349584/121996076-f87a4e00-cde2-11eb-981b-0913bca2124c.png)
-![image](https://user-images.githubusercontent.com/60349584/121996084-fb753e80-cde2-11eb-8963-150d3449a02e.png)
+![image](https://user-images.githubusercontent.com/59822853/122060627-b96eeb80-ce28-11eb-9f84-65084cede54e.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060632-baa01880-ce28-11eb-9144-2d946703dfa6.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060634-bb38af00-ce28-11eb-8c90-2346fcd84207.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060636-bb38af00-ce28-11eb-94a0-abf1d9a5e886.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060639-bbd14580-ce28-11eb-986a-356548a2b8fb.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060643-bbd14580-ce28-11eb-97d8-4ea9f57faeac.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060648-bbd14580-ce28-11eb-8e38-d15384d3c59c.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060650-bc69dc00-ce28-11eb-96d9-7cd13fbb4367.PNG)
+![image](https://user-images.githubusercontent.com/59822853/122060652-bc69dc00-ce28-11eb-86df-59f6e8531c5e.PNG)
 
 
 
