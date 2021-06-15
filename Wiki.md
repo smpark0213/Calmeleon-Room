@@ -42,11 +42,12 @@ IoT system that adjust the room condition appropriate to the current state of mi
 1. Raspberry Pi
 2. Google Assistant API
 3. Android Studio
-4. Temperature Sensing Sensor (DHT22)
-5. DC Motor (L289N)
-6. Step Motor (ULN2003)
-7. Speaker
-8. 3-colors LED
+4. Firebase
+5. Temperature Sensing Sensor (DHT22)
+6. DC Motor (L289N)
+7. Step Motor (ULN2003)
+8. Speaker
+9. 3-colors LED
 
 
 
