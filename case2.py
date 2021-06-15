@@ -50,6 +50,3 @@ def getValue_thread():
 if __name__ == "__main__":
     getValue_thread()
     temper()
-
-
-
