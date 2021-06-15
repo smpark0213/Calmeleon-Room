@@ -40,7 +40,7 @@ IoT system that adjust the room condition appropriate to the current state of mi
 
 ### Required technology for implementation
 1. Raspberry Pi
-2. Google Assistant API
+2. Google Speech-To-Text API
 3. Android Studio
 4. Firebase
 5. Temperature Sensing Sensor (DHT22)
