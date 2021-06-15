@@ -50,7 +50,7 @@ IoT system that adjust the room condition appropriate to the current state of mi
 
 
 ### Member information & Roles
-|공백|박승민|조병욱|황수정|
+| |박승민|조병욱|황수정|
 |---|------|-----|------|
 |Major|Software|Mechanical Engineering|Software|
 |E-mail|smpark0213@gachon.ac.kr|whquddnr97@gamil.com|sujung401@gachon.ac.kr|
