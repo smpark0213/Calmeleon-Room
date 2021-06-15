@@ -1,10 +1,5 @@
-##################################################################
-# pip install firebase_admin
-# pip install soynlp
-##################################################################
 ## 라즈베리파이 - 파이어베이스 Real time Database - 안드로이드 APP
 ## DB 이용하여 라즈베리파이와 안드로이드 APP간 데이터를 주고받음
-##################################################################
 
 # 파이어베이스 - Real time database 연결
 # credential과 db주소 필요
@@ -21,60 +16,64 @@ def firebase_init():
 
 # DB에서 사용자의 요청을 읽어옴
 # 아무 요청이 없을 시 비어잇는 문자열 반환
-# 요청이 있을 시 내용을 반환하고 DB에서 삭제
+# status가 false일시 메세지 반환
 def get_request(dir):
   request = dir.child('message').get()
   request_message = request['message']
   request_status = request['status']
 
   if request_status == 'False':
-    dir.child('message').delete()
     return request_message
   else:
     return ''
 
-# predefine_word에 공백으로 단어를 구별하여 입력
-# 사용자의 요청과 predefine_word의 거리를 계산하여 가장 가까운것 반환
-def check_word(request_message):
-  from soynlp.hangle import levenshtein
-  from soynlp.hangle import jamo_levenshtein
 
-  best = 100
-  best_index = 0
-  predefine_word = '덥다 춥다 졸리다'
-  predefine_word = predefine_word.split()
-  input_word = request_message
+# record에 날짜, 메시지, 안밖 온도 저장
+# decorate에 날짜, color 저장
+def save_record(dir, request_message, color, temp_in, temp_out):
+  from datetime import datetime
 
-  for i in range(3):
-    distance = jamo_levenshtein(predefine_word[i], input_word)
-    if distance < best:
-      best = distance
-      best_index = i
+  record_ref = dir.child('record')
 
-  return predefine_word[best_index]
+  date = datetime.today().strftime('%Y%m%d%H%M')
 
-import time
-import os
+  record = record_ref.push({'date' : date,
+                            'message' : request_message,
+                            'temperature_inside' : temp_in,
+                            'temperature_outside' : temp_out})
+  
+  decorate_ref = dir.child('Decorate')
 
-dir = firebase_init()
-request_message = ''
+  decorate = decorate_ref.push({'color' : color,'date' : date})
 
-# get_request함수를 10초마다 한번씩 실행
-# 공백이 반환되면 반복문의 처음으로 돌아가서 재실행
-# 문자열이 반환되면 탈출
+# 메인
+if __name__ == '__main__':
+  import time
+  import os
 
-while(True):
-  request_message = get_request(dir)
-  time.sleep(10)
+  f = open("a.txt", 'w')
 
-  if request_message == '':
-    continue
-  else:
-    break;
+  dir = firebase_init()
+  request_message = ''
 
+  # get_request함수를 10초마다 한번씩 실행
+  # 공백이 반환되면 반복문의 처음으로 돌아가서 재실행
+  # 문자열이 반환되면 탈출
+  while(True):
+    request_message = get_request(dir)
+    time.sleep(10)
 
-#request_message = check_word(request_message)
+    if request_message == '':
+      continue
+    else:
+      dir.child('message').set({'message' : request_message, 'status' : 'True'})
+      break
 
-print(request_message)
+  #request_message = check_word(request_message)
 
-os.system("python3 get_string.py")
+  print(request_message)
+  f.write(request_message)
+  f.close()
+  os.system("python3 main.py")
+
+  save_record(dir, request_message, 'red', '15', '20')
