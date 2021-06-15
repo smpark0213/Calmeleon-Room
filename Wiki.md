@@ -58,10 +58,10 @@ IoT system that adjust the room condition appropriate to the current state of mi
 |Role|Sensor & Actuator|API & Transfer Data Server|Idea Planning & Gathering and processing Data|
 
 ### Implemeatation Progress
-![image](https://user-images.githubusercontent.com/60349584/121995863-9e798880-cde2-11eb-8366-64cdef3790cd.png)
-![image](https://user-images.githubusercontent.com/60349584/121995877-a2a5a600-cde2-11eb-9273-84a816c52f33.png)
-![image](https://user-images.githubusercontent.com/60349584/121995886-a6d1c380-cde2-11eb-82de-33ca5c875693.png)
-![image](https://user-images.githubusercontent.com/60349584/121995899-aa654a80-cde2-11eb-9092-f1fa081dd66f.png)
+![image](https://user-images.githubusercontent.com/60349584/121996066-f1ebd680-cde2-11eb-8cd2-7f0d2d019421.png)
+![image](https://user-images.githubusercontent.com/60349584/121996076-f87a4e00-cde2-11eb-981b-0913bca2124c.png)
+![image](https://user-images.githubusercontent.com/60349584/121996084-fb753e80-cde2-11eb-8963-150d3449a02e.png)
+
 
 
 ### Schedule
