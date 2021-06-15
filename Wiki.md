@@ -41,11 +41,12 @@ IoT system that adjust the room condition appropriate to the current state of mi
 ### Required technology for implementation
 1. Raspberry Pi
 2. Google Assistant API
-3. Temperature Sensing Sensor (DHT22)
-4. DC Motor (L289N)
-5. Step Motor (ULN2003)
-6. Speaker
-7. 3-colors LED
+3. Android Studio
+4. Temperature Sensing Sensor (DHT22)
+5. DC Motor (L289N)
+6. Step Motor (ULN2003)
+7. Speaker
+8. 3-colors LED
 
 
 
@@ -55,7 +56,7 @@ IoT system that adjust the room condition appropriate to the current state of mi
 |Major|Software|Mechanical Engineering|Software|
 |E-mail|smpark0213@gachon.ac.kr|whquddnr97@gamil.com|sujung401@gachon.ac.kr|
 |Github ID|smpark0213|whquddnr97|hwangsujeong99|
-|Role|Sensor & Actuator & Wiki & Progress PPT|API & Transfer Data Server & Final PPT|Idea Planning & Gathering and processing Data & proposal PPT & Design Model|
+|Role|Sensor & Actuator & Wiki & Progress PPT|API & Transfer Data Server & Making Android app & Final PPT|Idea Planning & Gathering and processing Data & proposal PPT & Design Model|
 
 ### Implemeatation Progress
 ![image](https://user-images.githubusercontent.com/60349584/121996066-f1ebd680-cde2-11eb-8cd2-7f0d2d019421.png)
