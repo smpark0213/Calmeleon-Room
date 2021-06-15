@@ -55,7 +55,7 @@ IoT system that adjust the room condition appropriate to the current state of mi
 |Major|Software|Mechanical Engineering|Software|
 |E-mail|smpark0213@gachon.ac.kr|whquddnr97@gamil.com|sujung401@gachon.ac.kr|
 |Github ID|smpark0213|whquddnr97|hwangsujeong99|
-|Role|Sensor & Actuator & Wiki & Progress PPT|API & Transfer Data Server & Final PPT|Idea Planning & Gathering and processing Data & proposal PPT|
+|Role|Sensor & Actuator & Wiki & Progress PPT|API & Transfer Data Server & Final PPT|Idea Planning & Gathering and processing Data & proposal PPT & Design Model|
 
 ### Implemeatation Progress
 ![image](https://user-images.githubusercontent.com/60349584/121996066-f1ebd680-cde2-11eb-8cd2-7f0d2d019421.png)
