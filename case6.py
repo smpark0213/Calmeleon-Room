@@ -28,9 +28,9 @@ def temper():
             print(f"Inside Temperature= {temperature_inside:.1f}°C")
             sleep(1)
 
-            if float(temperature_inside) < float(temperature_outside):
+            if float(temperature_inside) > float(temperature_outside):
                 if temp:
-                    os.system("python3 door_open.py")
+                    os.system("python3 door_close.py")
                     temp = False
             else:
                 temp = True
@@ -52,9 +52,6 @@ def getValue_thread():
     thread.start()
     
 if __name__ == "__main__":
-    getValue_thread()
     mp3_thread()
+    getValue_thread()
     temper()
-
-
-
