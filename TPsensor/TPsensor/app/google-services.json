@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534468415103",
+    "project_id": "sensorandnetwork",
+    "storage_bucket": "sensorandnetwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534468415103:android:c5d6f64c678e07b815f94a",
+        "android_client_info": {
+          "package_name": "kr.ac.gachon.tpsensor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534468415103-335bqln67mnsm23uvfa2nfg223osdu5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiG6nCzeorlIRRhwmE3vieAecJe0tzu1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534468415103-335bqln67mnsm23uvfa2nfg223osdu5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
