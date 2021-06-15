@@ -39,9 +39,16 @@ def temper():
 
         except (RuntimeError, TypeError, NameError):
             pass
+        
+        
+def getValue_thread():
+    thread=threading.Thread(target=getValue)
+    thread.daemon=True
+    thread.start()
             
 
 if __name__ == "__main__":
+    getValue_thread()
     temper()
 
 
